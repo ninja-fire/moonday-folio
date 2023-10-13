@@ -1,0 +1,28 @@
+{
+  "name": "ninjafolio",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "version": "1.0.0",
+  "description": "ninjafolio",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ninja-fire/ninjafolio.git"
+  },
+  "author": "Ninja fire",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ninja-fire/ninjafolio/issues"
+  },
+  "homepage": "https://github.com/ninja-fire/ninjafolio",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "parcel": "^2.0.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.1",
+    "sass": "^1.43.4"
+  }
+}
