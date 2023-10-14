@@ -213,11 +213,19 @@ main {
             line-height: 1.25rem;
             color:#E7EEEB;
         font-weight: 600;
+        transition: all 0.2s;
+
         }
 
         &:hover {
             h5 {
             color: #A8ADAA;
+            }
+        }
+
+        &:active {
+            h5 {
+            color: #fff;
             }
         }
       }
