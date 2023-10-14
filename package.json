@@ -1,22 +1,22 @@
 {
-  "name": "ninjafolio",
+  "name": "moonday-folio",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "version": "1.0.0",
-  "description": "ninjafolio",
+  "description": "moonday studio portfolio",
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ninja-fire/ninjafolio.git"
+    "url": "git@github.com:ninja-fire/moonday-folio.git"
   },
   "author": "Ninja fire",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ninja-fire/ninjafolio/issues"
+    "url": "https://github.com/ninja-fire/moonday-folio/issues"
   },
-  "homepage": "https://github.com/ninja-fire/ninjafolio",
+  "homepage": "https://github.com/ninja-fire/moonday-folio",
   "dependencies": {
     "animate.css": "^4.1.1",
     "parcel": "^2.0.0"
