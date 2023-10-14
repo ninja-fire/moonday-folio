@@ -160,7 +160,7 @@ main {
     flex-direction: row;
     gap: 1rem;
     flex-wrap: wrap;
-    //justify-content: center;
+    justify-content: center;
   }
 
   .gap-1-2-row {
@@ -185,26 +185,59 @@ main {
   }
 
 .nav-menu {
-    .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 0.75rem;
+    gap: 1rem;
+    position: fixed;
+    bottom: 4rem;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.08);
+    border: .05rem solid rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(32px);
+    border-radius: 1000px;
+
+    .nav {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         align-items: center;
-        padding: .2rem 1rem;
-        gap: 2rem;
-        background: rgba(255, 255, 255, 0.08);
-        border: .05rem solid rgba(255, 255, 255, 0.16);
-        backdrop-filter: blur(32px);
-        border-radius: 1000px;
-  
-        .nav {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          padding: 0 1rem;
-  
+        padding: 0.5rem 0;
+        width: 7.5rem;
+        gap: 0.5rem;
+        cursor: pointer;
+
+        h5 {
+            line-height: 1.25rem;
+            color:#E7EEEB;
+        font-weight: 600;
         }
-}
+
+        &:hover {
+            h5 {
+            color: #A8ADAA;
+            }
+        }
+      }
+
+    .nav-slogan {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 0;
+        width: 7.5rem;
+        gap: 0.5rem;
+        line-height: 1.25rem;
+        cursor: default;
+
+        .slogan {
+            color:rgba(231, 238, 235, 0.32);
+            font-weight: 500;
+        }
+    }
 
   }
 
