@@ -25,6 +25,16 @@ body {
   justify-content: center;
   position: relative;
 
+  p {
+    color:#A8ADAA;
+    font-family: Satoshi;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.75rem; /* 175% */
+    letter-spacing: -0.02rem;
+  }
+
   header {
     display: flex;
     flex-direction: row;
@@ -80,6 +90,41 @@ main {
         background-position: center;
         background-size: cover;
     }
+  }
+
+  #studio {
+    justify-content: center;
+
+    span {
+        background-image: url("../assets/image/bg.png");
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-family: 'Clash Display', sans-serif;
+        -webkit-text-fill-color: transparent;
+        font-style: normal;
+        font-weight: 400;
+        background-repeat: repeat; 
+        background-position: center;
+        background-size: cover;
+    }
+
+    svg {
+      position: absolute;
+
+        &#left {
+            left: -12rem;
+        }
+
+        &#right {
+
+            right: -12rem;
+        }
+    }
+
+    p {
+        width: 60%;
+    }
+
   }
 
   .CTA-tag {
@@ -182,6 +227,10 @@ main {
     display: flex;
     flex-direction: column;
     gap: .5rem;
+  }
+
+  .align-center {
+    align-items: center;
   }
 
 .nav-menu {
@@ -299,9 +348,39 @@ main {
 }
 
 @media (max-width: 480px) {
-  header {
-    width: 92vw;
-    top: 1rem;
+
+  body {
+
+    header {
+        width: 92vw;
+        top: 1rem;
+    
+      }
+
+    #studio {
+
+        svg {
+
+            // width: 240px;
+            // height: 240px;
+
+            &#left {
+              left: -21rem;
+          }
+  
+          &#right {
+  
+              right: -21rem;
+          }
+        }
+    
+        p {
+            width: 80%;
+        }
+    
+      }
 
   }
+
+
 }
