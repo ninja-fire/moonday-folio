@@ -139,8 +139,8 @@ body {
 
   #hero {
     justify-content: center;
-    // padding-bottom: 5rem;
-    height: 100vh;
+    padding-bottom: 2rem;
+    height: 84vh;
 
     div {
       align-items: center;
@@ -330,6 +330,24 @@ body {
     }
   }
 
+  #contact-cta {
+
+    padding-bottom: 0;
+    
+    span {
+      background-image: url("../assets/image/bg.png");
+      background-clip: text;
+      -webkit-background-clip: text;
+      font-family: 'Clash Display', sans-serif;
+      -webkit-text-fill-color: transparent;
+      font-style: normal;
+      font-weight: 400;
+      background-repeat: repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
   .CTA-tag {
     display: flex;
     padding: 0.5rem 0.75rem;
@@ -500,6 +518,9 @@ body {
   }
 
   .line-break {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 90%;
     overflow: hidden;
   }
@@ -525,6 +546,32 @@ body {
       flex-wrap: nowrap;
     }
 
+    #studio {
+
+      padding-bottom: 8rem;
+
+      .left {
+        z-index: -2;
+        filter: blur(0.5rem);
+        top: 0rem;
+        left: -8rem;
+        scale: 400%;
+      }
+
+      .right {
+        z-index: -2;
+        filter: blur(0.5rem);
+        top: 0rem;
+        right: -8rem;
+        scale: 400%;
+      }
+
+      p {
+        width: 80vw;
+      }
+
+    }
+
     footer {
       width: 84vw;
 
@@ -546,6 +593,32 @@ body {
     #team {
       flex-wrap: wrap;
     }
+
+    // #studio {
+
+    //   padding-bottom: 8rem;
+
+    //   .left {
+    //     z-index: -2;
+    //     filter: blur(2px);
+    //     top: 0rem;
+    //     left: -8rem;
+    //     scale: 1000%;
+    //   }
+
+    //   .right {
+    //     z-index: -2;
+    //     filter: blur(2px);
+    //     top: 0rem;
+    //     right: -8rem;
+    //     scale: 1000%;
+    //   }
+
+    //   p {
+    //     width: 80vw;
+    //   }
+
+    // }
 
     .nav-menu {
       .nav {
@@ -589,18 +662,18 @@ body {
 
       .left {
         z-index: -2;
-        filter: blur(.5px);
-        top: -5rem;
-        left: -8rem;
-        scale: 4000%;
+        filter: blur(1.5px);
+        // top: -5rem;
+        left: -4rem;
+        scale: 2000%;
       }
 
       .right {
         z-index: -2;
-        filter: blur(0.5px);
-        top: -5rem;
-        right: -8rem;
-        scale: 4000%;
+        filter: blur(1.5px);
+        // top: -5rem;
+        right: -4rem;
+        scale: 2000%;
       }
 
       p {
