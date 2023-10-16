@@ -93,26 +93,3 @@ form {
   input[type="checkbox"]:checked::before {
     transform: scale(1);
   }
-
-
-  @media (max-width: 1250px) {
-
-    body {
-
-      form {
-      width: 84vw;
-
-      }
-    }
-  }
-
-  @media (max-width: 768px) {
-
-    body {
-
-      form {
-      width: 92vw;
-
-      }
-    }
-  }

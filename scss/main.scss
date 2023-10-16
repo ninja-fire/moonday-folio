@@ -321,6 +321,24 @@ body {
       z-index: 4;
     }
 
+    .sticky-btn {
+      position: sticky;
+      bottom: 0;
+      width: 100%;
+      z-index: 4;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+
+      .btn-primary-out {
+        width: 100%;
+      }
+
+      .btn-primary-in {
+        width: 100%;
+      }
+    }
+
     max-width: 96vh;
 
     form {
@@ -652,7 +670,7 @@ body {
     #wishlist {
 
       form {
-        width: 92vw;
+        width: 88vw;
         padding: 0 1.5rem 1.5rem 1.5rem;
 
         h4 {
