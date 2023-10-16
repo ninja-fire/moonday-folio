@@ -330,6 +330,24 @@ body {
     }
   }
 
+  #contact-cta {
+
+    padding-bottom: 0;
+    
+    span {
+      background-image: url("../assets/image/bg.png");
+      background-clip: text;
+      -webkit-background-clip: text;
+      font-family: 'Clash Display', sans-serif;
+      -webkit-text-fill-color: transparent;
+      font-style: normal;
+      font-weight: 400;
+      background-repeat: repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
   .CTA-tag {
     display: flex;
     padding: 0.5rem 0.75rem;
