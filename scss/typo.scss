@@ -1,196 +1,204 @@
+h1 {
+  font-family: 'Clash Display', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.5rem;
+  text-align: center;
+  padding-bottom: .5rem;
+  color: #E7EEEB;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.30);
 
-  h1 {
-    font-family: 'Clash Display', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 4rem;
-    line-height: 4.5rem;
-    text-align: center;
-    padding-bottom: .5rem;
-    color: #E7EEEB;
-    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.30);
+  background: radial-gradient(54.8% 50% at 50% 50%, #FFFFFF 0%, #9E9E9E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 
-    background: radial-gradient(54.8% 50% at 50% 50%, #FFFFFF 0%, #9E9E9E 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-  
-  }
-  
-  h2 {
-    font-family: 'Clash Display', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 3rem;
-    line-height: 4rem;
-    text-align: center;
-  
-    background: radial-gradient(54.8% 50% at 50% 50%, #FFFFFF 0%, #9E9E9E 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-  }
-  
-  h3 {
-    font-family: 'Clash Display', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 2rem;
-    line-height: 43px;
-    width: fit-content;
+}
 
-    color: #E7EEEB;
-  
-  }
-  
-  h4 {
-    font-family: 'Clash Display', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 26px;
-  
-    background: radial-gradient(54.8% 50% at 50% 50%, #FFFFFF 0%, #9E9E9E 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-  }
-  
-  h5 {
-    font-family: 'Clash Display', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 0.75rem;
-    line-height: normal;
-    color: #A8ADAA;
-  }
-  
-  .menu-link {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
+h2 {
+  font-family: 'Clash Display', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 4rem;
+  text-align: center;
+
+  background: radial-gradient(54.8% 50% at 50% 50%, #FFFFFF 0%, #9E9E9E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+h3 {
+  font-family: 'Clash Display', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 43px;
+  width: fit-content;
+
+  color: #E7EEEB;
+
+}
+
+h4 {
+  font-family: 'Clash Display', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+
+  background: radial-gradient(54.8% 50% at 50% 50%, #FFFFFF 0%, #9E9E9E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+h5 {
+  font-family: 'Clash Display', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: normal;
+  color: #A8ADAA;
+}
+
+.name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: flex-end;
+  color: #71737C;
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+
+  color: #71737C;
+
+  &.italic {
+    font-style: italic;
     color: #B1B4BC;
+    text-align: left;
   }
-  
-  a:hover {
-    color: #FFFFFF;
-  }
-  
-  a:active {
-    color: #B1B4BC;
-  }
-  
-  .name {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    display: flex;
-    align-items: flex-end;
+}
+
+.caption {
+  color: #7D817F;
+  text-align: center;
+  font-family: Beatrice Trial;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+  /* 233.333% */
+  letter-spacing: -0.015rem;
+}
+
+.body {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+
+  display: flex;
+  align-items: flex-end;
+
+  text-overflow: ellipsis;
+
+  &.placeholder {
     color: #71737C;
   }
-  
-  .subtitle {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-  
-    display: flex;
-    align-items: flex-end;
-    text-align: center;
-  
-    color: #71737C;
-  
-    &.italic {
-      font-style: italic;
-      color: #B1B4BC;
-      text-align: left;
-    }
+
+  &.caption {
+    color: #B2B5BB;
   }
 
-  .caption {
-    color: #7D817F;
-    text-align: center;
-    font-family: Beatrice Trial;
+  &.bold {
+    font-weight: 700;
+  }
+}
+
+a {
+
+  &.link {
+    color: rgba(231, 238, 235, 0.50);
+    text-align: right;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.75rem; /* 233.333% */
-    letter-spacing: -0.015rem;
-  }
+    line-height: 1.25rem;
+    text-decoration-line: underline;
+
+    &:hover {
+    text-decoration-line: none;
+
+    }
+
+    &:visited {
+      color: #8B7AFF;
+    }
   
-  .body {
-    font-style: normal;
-    font-weight: 500;
+  }
+}
+
+@media (max-width: 1250px) {
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .subtitle {
     font-size: 14px;
-    line-height: 22px;
-  
-    display: flex;
-    align-items: flex-end;
-  
-    text-overflow: ellipsis;
-  
-    &.placeholder {
-      color: #71737C;
-    }
-  
-    &.caption {
-      color: #B2B5BB;
-    }
-  
-    &.bold {
-      font-weight: 700;
-    }
+    line-height: 1.2rem;
+    font-weight: 500;
   }
-  
-  @media (max-width: 1250px) {
-  
-    h1 {
-      font-size: 3rem;
-      line-height: 3.5rem;
-    }
-  
-    h2 {
-      font-size: 2.5rem;
-      line-height: 3rem;
-    }
-  
+
+  .subtitle.italic {
+    font-style: italic;
+    color: #B1B4BC;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 700;
+
   }
-  
-  @media (max-width: 768px) {
-  
-    h1 {
-      font-size: 2rem;
-      line-height: 2.5rem;
-    }
-  
-    h2 {
-      font-size: 2rem;
-      line-height: 2rem;
-    }
-  
-    h3 {
-      font-size: 1.5rem;
-      line-height: 2rem;
-    }
-  
-    .subtitle {
-      font-size: 14px;
-      line-height: 1.2rem;
-      font-weight: 500;
-    }
-  
-    .subtitle.italic {
-      font-style: italic;
-      color: #B1B4BC;
-      text-align: left;
-      font-size: 1rem;
-      font-weight: 700;
-  
-    }
-  
-  }
+
+}
