@@ -499,6 +499,11 @@ body {
     }
   }
 
+  .line-break {
+    width: 90%;
+    overflow: hidden;
+  }
+
 }
 
 @media (max-width: 1250px) {
@@ -518,7 +523,12 @@ body {
 
     #team {
       flex-wrap: nowrap;
-      }
+    }
+
+    footer {
+      width: 84vw;
+
+    }
   }
 }
 
@@ -535,7 +545,27 @@ body {
 
     #team {
       flex-wrap: wrap;
+    }
+
+    .nav-menu {
+      .nav {
+        width: 6rem;
       }
+
+      .nav-slogan {
+        display: none;
+      }
+    }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4rem;
+
+      .nav {
+        justify-content: start;
+      }
+    }
   }
 }
 
@@ -591,9 +621,18 @@ body {
 
     #team {
       flex-wrap: wrap;
+    }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4rem;
+
+      .nav {
+        justify-content: start;
       }
+    }
 
   }
-
 
 }
