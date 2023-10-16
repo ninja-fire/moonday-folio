@@ -79,15 +79,16 @@ h5 {
 
 .subtitle {
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 600;
+  font-family: 'Clash Display', sans-serif;
+  font-size: 14px;
+  line-height: 1rem;
 
   display: flex;
   align-items: flex-end;
   text-align: center;
 
-  color: #71737C;
+  color: #A8ADAA;
 
   &.italic {
     font-style: italic;

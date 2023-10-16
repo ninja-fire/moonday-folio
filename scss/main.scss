@@ -1,6 +1,8 @@
 @import "css-reset";
 @import "typo";
 @import "button";
+@import "form";
+
 
 
 * {
@@ -212,7 +214,7 @@ body {
   #work {
 
     // width: 100%;
-    align-items: flex-start;
+    // align-items: flex-start;
 
     div {
       width: 100%;
@@ -307,6 +309,24 @@ body {
     }
   }
 
+  #wishlist {
+
+    max-width: 96vh;
+
+    span {
+      background-image: url("../assets/image/bg.png");
+      background-clip: text;
+      -webkit-background-clip: text;
+      font-family: 'Clash Display', sans-serif;
+      -webkit-text-fill-color: transparent;
+      font-style: normal;
+      font-weight: 400;
+      background-repeat: repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
   #team {
 
     flex-wrap: nowrap;
@@ -333,7 +353,7 @@ body {
   #contact-cta {
 
     padding-bottom: 0;
-    
+
     span {
       background-image: url("../assets/image/bg.png");
       background-clip: text;
@@ -467,6 +487,10 @@ body {
 
   .align-center {
     align-items: center;
+  }
+
+  .flex-start {
+    justify-content: flex-start;
   }
 
   footer {

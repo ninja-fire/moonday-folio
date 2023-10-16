@@ -1,0 +1,91 @@
+form {
+    align-items: flex-start;
+    padding: 1.5rem 2rem;
+
+    border-radius: 1.5rem;
+    border: 1px solid rgba(231, 238, 235, 0.08);
+    background: rgba(231, 238, 235, 0.08);
+    box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.15);
+  }
+
+  .form-control {
+    font-family: system-ui, sans-serif;
+    // font-size: 2rem;
+    // font-weight: bold;
+    // line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+  }
+
+  .form-control+.form-control {
+    margin-top: 1em;
+  }
+
+  .form-control--disabled {
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
+  }
+
+  input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: var(--form-background);
+    /* Not removed via appearance */
+    margin: 0;
+
+    font: inherit;
+    color: currentColor;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid rgba(231, 238, 235, 0.08);
+    ;
+    border-radius: 0.4rem;
+    transform: translateY(-0.075em);
+
+    display: grid;
+    place-content: center;
+  }
+
+  input[type="checkbox"]::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    clip-path: rect(1rem, 1rem);
+    transform: scale(0);
+    border-radius: 0.2rem;
+    transform-origin: center;
+    transition: 120ms transform ease-in-out;
+
+    /* Windows High Contrast Mode */
+    background-color: #8B7AFF;
+  }
+
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+
+  // input[type="checkbox"]:focus {
+  //   outline: max(2px, 0.15em) solid currentColor;
+  //   outline-offset: max(2px, 0.15em);
+  // }
+
+  input[type="checkbox"]:disabled {
+    cursor: not-allowed;
+  }
+
+  input[type="checkbox"]::before {
+    content: "";
+    width: .8rem;
+    height: .8rem;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    // box-shadow: inset 1em 1em var(--form-control-color);
+  }
+
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
