@@ -49,7 +49,7 @@
     font-family: 'Clash Display', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 26px;
   
     background: radial-gradient(54.8% 50% at 50% 50%, #FFFFFF 0%, #9E9E9E 100%);
@@ -110,6 +110,17 @@
       color: #B1B4BC;
       text-align: left;
     }
+  }
+
+  .caption {
+    color: #7D817F;
+    text-align: center;
+    font-family: Beatrice Trial;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem; /* 233.333% */
+    letter-spacing: -0.015rem;
   }
   
   .body {

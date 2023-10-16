@@ -307,6 +307,29 @@ body {
     }
   }
 
+  #team {
+
+    flex-wrap: nowrap;
+
+    span {
+      background-image: url("../assets/image/bg.png");
+      background-clip: text;
+      -webkit-background-clip: text;
+      font-family: 'Clash Display', sans-serif;
+      -webkit-text-fill-color: transparent;
+      font-style: normal;
+      font-weight: 400;
+      background-repeat: repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    img {
+      width: 24rem;
+      height: 24rem;
+    }
+  }
+
   .CTA-tag {
     display: flex;
     padding: 0.5rem 0.75rem;
@@ -350,6 +373,10 @@ body {
     display: none;
   }
 
+  .flex-1 {
+    flex: 1;
+  }
+
   .padding-80 {
     padding: 5rem 0;
   }
@@ -371,6 +398,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .gap-4-row {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    flex-wrap: wrap;
   }
 
   .gap-2-row {
@@ -409,6 +443,10 @@ body {
     gap: .5rem;
   }
 
+  .width-s {
+    max-width: 50rem;
+  }
+
   .align-center {
     align-items: center;
   }
@@ -442,6 +480,10 @@ body {
       gap: 2rem;
       scroll-margin-top: 4rem;
     }
+
+    #team {
+      flex-wrap: nowrap;
+      }
   }
 }
 
@@ -451,11 +493,14 @@ body {
 
     .container {
       width: 92vw;
-      //gap: 4rem;
       scroll-margin-top: 4rem;
       padding-bottom: 3rem;
 
     }
+
+    #team {
+      flex-wrap: wrap;
+      }
   }
 }
 
@@ -501,11 +546,17 @@ body {
 
     #work {
 
+      padding-bottom: 8rem;
+
       div {
         flex-wrap: wrap;
 
       }
     }
+
+    #team {
+      flex-wrap: wrap;
+      }
 
   }
 
