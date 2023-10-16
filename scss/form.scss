@@ -1,6 +1,6 @@
 form {
     align-items: flex-start;
-    padding: 2rem 2rem;
+    padding: 0 2rem 2rem 2rem;
 
     border-radius: 1.5rem;
     border: 1px solid rgba(231, 238, 235, 0.08);
@@ -34,10 +34,12 @@ form {
     /* Not removed via appearance */
     margin: 0;
 
-    font: inherit;
-    color: currentColor;
-    width: 1.5rem;
-    height: 1.5rem;
+    // font: inherit;
+    // color: currentColor;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+
     border: 1px solid rgba(231, 238, 235, 0.08);
     background-color: rgba(231, 238, 235, 0.04);
     border-radius: 0.4rem;
@@ -93,26 +95,24 @@ form {
   }
 
 
+  @media (max-width: 1250px) {
+
+    body {
+
+      form {
+      width: 84vw;
+
+      }
+    }
+  }
+
   @media (max-width: 768px) {
 
     body {
 
-        input[type="checkbox"] {
-            height: 1.2rem;
-            border-radius: 0.2rem;
-            margin-top: 0.1rem;
-          }
+      form {
+      width: 92vw;
 
-    }
-  }
-
-  @media (max-width: 480px) {
-
-    body {
-
-        input[type="checkbox"] {
-            height: 1rem;
-          }
-
+      }
     }
   }
