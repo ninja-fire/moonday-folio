@@ -1,6 +1,8 @@
 @import "css-reset";
 @import "typo";
 @import "button";
+@import "form";
+
 
 
 * {
@@ -25,17 +27,6 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-
-  p {
-    color: #A8ADAA;
-    font-family: Satoshi;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.75rem;
-    /* 175% */
-    letter-spacing: -0.02rem;
-  }
 
   header {
     display: flex;
@@ -212,7 +203,7 @@ body {
   #work {
 
     // width: 100%;
-    align-items: flex-start;
+    // align-items: flex-start;
 
     div {
       width: 100%;
@@ -307,6 +298,73 @@ body {
     }
   }
 
+  #wishlist {
+
+    .sticky-header {
+      position: sticky;
+      top: 0;
+      background-color: #242525;
+      width: 100%;
+      padding: 1.5rem 0 1.125rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: 4;
+    }
+
+    .sticky-btn {
+      position: sticky;
+      bottom: 0;
+      width: 100%;
+      z-index: 4;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+
+      .btn-primary-out {
+        width: 100%;
+      }
+
+      .btn-primary-in {
+        width: 100%;
+      }
+    }
+
+    max-width: 96vh;
+
+    form {
+      width: 80%;
+      height: 64vh;
+      flex-wrap: nowrap;
+      overflow: scroll;
+    }
+
+    label {
+
+      flex-wrap: nowrap;
+
+      p {
+        text-align: start;
+      }
+
+      &:hover {
+        text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.2);
+        cursor: pointer;
+      }
+    }
+
+    span {
+      background-image: url("../assets/image/bg.png");
+      background-clip: text;
+      -webkit-background-clip: text;
+      font-family: 'Clash Display', sans-serif;
+      -webkit-text-fill-color: transparent;
+      font-style: normal;
+      font-weight: 400;
+      background-repeat: repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+
   #team {
 
     flex-wrap: nowrap;
@@ -333,7 +391,7 @@ body {
   #contact-cta {
 
     padding-bottom: 0;
-    
+
     span {
       background-image: url("../assets/image/bg.png");
       background-clip: text;
@@ -469,6 +527,10 @@ body {
     align-items: center;
   }
 
+  .flex-start {
+    align-items: flex-start;
+  }
+
   footer {
     display: flex;
     flex-direction: column;
@@ -552,22 +614,22 @@ body {
 
       .left {
         z-index: -2;
-        filter: blur(0.5rem);
+        filter: blur(2rem);
         top: 0rem;
         left: -8rem;
-        scale: 400%;
+        scale: 100%;
       }
 
       .right {
         z-index: -2;
-        filter: blur(0.5rem);
+        filter: blur(2rem);
         top: 0rem;
         right: -8rem;
-        scale: 400%;
+        scale: 100%;
       }
 
       p {
-        width: 80vw;
+        width: 48vw;
       }
 
     }
@@ -590,35 +652,44 @@ body {
 
     }
 
+    #studio {
+
+      .left {
+        z-index: -2;
+        filter: blur(1rem);
+        top: 0rem;
+        left: -6rem;
+        scale: 200%;
+      }
+
+      .right {
+        z-index: -2;
+        filter: blur(1rem);
+        top: 0rem;
+        right: -6rem;
+        scale: 200%;
+      }
+
+      p {
+        width: 64vw;
+      }
+    }
+
     #team {
       flex-wrap: wrap;
     }
 
-    // #studio {
+    #wishlist {
 
-    //   padding-bottom: 8rem;
+      form {
+        width: 88vw;
+        padding: 0 1.5rem 1.5rem 1.5rem;
 
-    //   .left {
-    //     z-index: -2;
-    //     filter: blur(2px);
-    //     top: 0rem;
-    //     left: -8rem;
-    //     scale: 1000%;
-    //   }
-
-    //   .right {
-    //     z-index: -2;
-    //     filter: blur(2px);
-    //     top: 0rem;
-    //     right: -8rem;
-    //     scale: 1000%;
-    //   }
-
-    //   p {
-    //     width: 80vw;
-    //   }
-
-    // }
+        h4 {
+          font-size: 1.125rem;
+        }
+      }
+    }
 
     .nav-menu {
       .nav {
@@ -662,18 +733,18 @@ body {
 
       .left {
         z-index: -2;
-        filter: blur(1.5px);
+        filter: blur(2px);
         // top: -5rem;
         left: -4rem;
-        scale: 2000%;
+        scale: 1500%;
       }
 
       .right {
         z-index: -2;
-        filter: blur(1.5px);
+        filter: blur(2px);
         // top: -5rem;
         right: -4rem;
-        scale: 2000%;
+        scale: 1500%;
       }
 
       p {
