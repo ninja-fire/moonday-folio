@@ -28,17 +28,6 @@ body {
   justify-content: center;
   position: relative;
 
-  p {
-    color: #A8ADAA;
-    font-family: Satoshi;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.75rem;
-    /* 175% */
-    letter-spacing: -0.02rem;
-  }
-
   header {
     display: flex;
     flex-direction: row;
@@ -316,7 +305,7 @@ body {
       top: 0;
       background-color: #242525;
       width: 100%;
-      padding: 2rem 0 1.5rem 0;
+      padding: 1.5rem 0 1.125rem 0;
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       z-index: 4;
     }
@@ -625,22 +614,22 @@ body {
 
       .left {
         z-index: -2;
-        filter: blur(0.5rem);
+        filter: blur(2rem);
         top: 0rem;
         left: -8rem;
-        scale: 400%;
+        scale: 100%;
       }
 
       .right {
         z-index: -2;
-        filter: blur(0.5rem);
+        filter: blur(2rem);
         top: 0rem;
         right: -8rem;
-        scale: 400%;
+        scale: 100%;
       }
 
       p {
-        width: 80vw;
+        width: 48vw;
       }
 
     }
@@ -661,6 +650,29 @@ body {
       scroll-margin-top: 4rem;
       padding-bottom: 3rem;
 
+    }
+
+    #studio {
+
+      .left {
+        z-index: -2;
+        filter: blur(1rem);
+        top: 0rem;
+        left: -6rem;
+        scale: 200%;
+      }
+
+      .right {
+        z-index: -2;
+        filter: blur(1rem);
+        top: 0rem;
+        right: -6rem;
+        scale: 200%;
+      }
+
+      p {
+        width: 64vw;
+      }
     }
 
     #team {
@@ -721,18 +733,18 @@ body {
 
       .left {
         z-index: -2;
-        filter: blur(1.5px);
+        filter: blur(2px);
         // top: -5rem;
         left: -4rem;
-        scale: 2000%;
+        scale: 1500%;
       }
 
       .right {
         z-index: -2;
-        filter: blur(1.5px);
+        filter: blur(2px);
         // top: -5rem;
         right: -4rem;
-        scale: 2000%;
+        scale: 1500%;
       }
 
       p {

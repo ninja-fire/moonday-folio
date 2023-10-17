@@ -1,6 +1,6 @@
 form {
     align-items: flex-start;
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 2rem 1.5rem 2rem;
 
     border-radius: 1.5rem;
     border: 1px solid rgba(231, 238, 235, 0.08);
@@ -51,6 +51,7 @@ form {
     &:hover {
     border: 1px solid rgba(231, 238, 235, 0.16);
     background-color: rgba(231, 238, 235, 0.08);
+    cursor: pointer;
     }
   }
 
