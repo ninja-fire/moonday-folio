@@ -348,11 +348,11 @@
                     to suit your needs in the ever-evolving landscape of Web3 and blockchain technology.</p>
             </div>
 
-            <form class="gap-2" action="">
+            <form class="gap-2" id="dynamic-form" action="">
                 <div class="sticky-header">
                     <h4>Your Wish List</h4>
                 </div>
-                <div class="gap-2 flex-start">
+                <div class="gap-2 flex-start" id="form-content">
                     <label class="form-control gap-1-row" for="branding">
                         <input type="checkbox" id="branding" name="design-needs" value="branding" />
                         <div class="gap-1-2">
@@ -411,23 +411,8 @@
                     </label>
                 </div>
 
-                <!-- <label class="form-control">
-                  <input type="checkbox" name="checkbox-checked" checked />
-                  Checkbox - checked
-                </label>
-              
-                <label class="form-control form-control--disabled">
-                  <input type="checkbox" name="checkbox-disabled" disabled />
-                  Checkbox Disabled
-                </label>
-              
-                <label class="form-control form-control--disabled">
-                  <input type="checkbox" name="checkbox-disabled-checked" checked disabled />
-                  Checkbox Disabled - checked
-                </label> -->
-
                 <div class="sticky-btn">
-                    <div class="btn-primary-out"><button class="btn-primary-in">Validate My Wishlist</button></div>
+                    <div class="btn-primary-out"><button class="btn-primary-in" id="validate-wishlist-button" type="button">Validate My Wishlist</button></div>
                 </div>
 
             </form>

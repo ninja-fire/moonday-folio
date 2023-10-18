@@ -335,6 +335,8 @@ body {
       height: 64vh;
       flex-wrap: nowrap;
       overflow: scroll;
+      justify-content: space-between;
+
     }
 
     label {
@@ -343,6 +345,40 @@ body {
 
       p {
         text-align: start;
+      }
+
+      &#email-label {
+        font-family: "Clash Display", sans-serif;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: #A8ADAA;
+      }
+
+      &#name-label {
+        font-family: "Clash Display", sans-serif;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: #A8ADAA;
+      }
+
+      &#text-label {
+        font-family: "Clash Display", sans-serif;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: #A8ADAA;
+        width: 100%;
+
+        & textarea {
+        min-height: 6rem;
+        align-items: flex-start;
+
+        }
       }
 
       &:hover {

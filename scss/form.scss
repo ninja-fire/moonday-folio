@@ -73,11 +73,6 @@ form {
     transform: scale(1);
   }
 
-  // input[type="checkbox"]:focus {
-  //   outline: max(2px, 0.15em) solid currentColor;
-  //   outline-offset: max(2px, 0.15em);
-  // }
-
   input[type="checkbox"]:disabled {
     cursor: not-allowed;
   }
@@ -93,4 +88,98 @@ form {
 
   input[type="checkbox"]:checked::before {
     transform: scale(1);
+  }
+
+  input[type="email"] {
+
+    min-width: 15rem;
+
+    border: 1px solid rgba(231, 238, 235, 0.08);
+    background-color: rgba(231, 238, 235, 0.04);
+    border-radius: 0.5rem;
+    padding: .5rem 1rem;
+
+    font-family: 'Satoshi', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #E7EEEB;
+
+    ::placeholder {
+      font-family: 'Satoshi', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #7D817F;
+    }
+
+    &:hover {
+    background-color: rgba(231, 238, 235, 0.08);
+    }
+
+    &:focus {
+    outline: 1px solid rgba(139, 122, 255, 0.32);
+
+    }
+  }
+
+  input[type="text"] {
+
+    min-width: 15rem;
+
+    border: 1px solid rgba(231, 238, 235, 0.08);
+    background-color: rgba(231, 238, 235, 0.04);
+    border-radius: 0.5rem;
+    padding: .5rem 1rem;
+
+    font-family: 'Satoshi', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #E7EEEB;
+
+    ::placeholder {
+      font-family: 'Satoshi', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #7D817F;
+      text-align: start;
+    }
+
+    &:hover {
+    background-color: rgba(231, 238, 235, 0.08);
+    }
+
+    &:focus {
+    outline: 1px solid rgba(139, 122, 255, 0.32);
+
+    }
+  }
+
+  textarea {
+    min-width: 15rem;
+
+    border: 1px solid rgba(231, 238, 235, 0.08);
+    background-color: rgba(231, 238, 235, 0.04);
+    border-radius: 0.5rem;
+    padding: .5rem 1rem;
+
+    font-family: 'Satoshi', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #E7EEEB;
+
+    ::placeholder {
+      font-family: 'Satoshi', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #7D817F;
+      text-align: start;
+    }
+
+    &:hover {
+    background-color: rgba(231, 238, 235, 0.08);
+    }
+
+    &:focus {
+    outline: 1px solid rgba(139, 122, 255, 0.32);
+
+    }
   }
