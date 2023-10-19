@@ -123,6 +123,26 @@ function handleContactDetailsSubmit() {
 
     // Remove everything inside the form
     dynamicForm.innerHTML = '';
+
+    // const thanksContainer = document.createElement('div');
+    // thanksContainer.className = 'gap'
+
+    const thanksTitle = document.createElement('h4');
+    thanksTitle.textContent = "Thank you!";
+    thanksTitle.style.textAlign = 'center';
+    thanksTitle.style.width = '100%';
+
+    dynamicForm.style.justifyContent = 'center';
+
+
+    const thanksP = document.createElement('p');
+    thanksP.className = 'caption';
+    thanksP.textContent = "Your message has been sent successfully. We'll get back to you as soon as possible. In the meantime, feel free to explore more of our work and services.";
+    thanksP.style.textAlign = 'center';
+
+    dynamicForm.appendChild(thanksTitle);
+    dynamicForm.appendChild(thanksP);
+
 }
 
 // Function to re-create the checkboxes and other elements from the previous form
