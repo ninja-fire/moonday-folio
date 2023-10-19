@@ -1,12 +1,24 @@
 import '../scss/main.scss'
 
+const selectedDesignNeeds = [];
+const contactDetails = [];
+
+const dynamicForm = document.getElementById('dynamic-form');
+const formContent = document.getElementById('form-content');
+
 // Function to update the form to display contact details
 function showContactDetailsForm() {
+
+    const checkboxes = document.querySelectorAll('input[name="design-needs"]:checked');
+    
+    checkboxes.forEach((checkbox) => {
+        selectedDesignNeeds.push(checkbox.value);
+    });
+
     // Change the main title
     document.querySelector('#dynamic-form .sticky-header h4').textContent = 'Contact Details';
 
     // Remove the checkbox and replace it with a text input
-    const formContent = document.getElementById('form-content');
     // const checkboxLabel = document.querySelector('label[for="branding"]');
     // const checkboxInput = document.getElementById('branding');
 
@@ -88,9 +100,26 @@ function showContactDetailsForm() {
 
 // Function to handle contact details submission
 function handleContactDetailsSubmit() {
-    // Gather and process the contact details submitted
-    // You can use JavaScript to handle form submission as needed
+    console.log("second click");
+
+    const emailDetails = document.getElementById('email-details');
+    const nameDetails = document.getElementById('name-details');
+    const textDetails = document.getElementById('text-details');
+
+    contactDetails.push(emailDetails.value);
+    contactDetails.push(nameDetails.value);
+    contactDetails.push(textDetails.value);
+
+    // Change title textContent
+    
+    // document.querySelector('#dynamic-form .sticky-header h4').textContent = 'Thank you!';
+    dynamicForm.innerHTML = '';
+
+
 }
 
 // Attach a click event listener to the "Validate My Wishlist" button
-document.getElementById('validate-wishlist-button').addEventListener('click', showContactDetailsForm);
+document.getElementById('validate-wishlist-button').addEventListener('click', showContactDetailsForm, );
+
+console.log(selectedDesignNeeds);
+console.log(contactDetails);

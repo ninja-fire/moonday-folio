@@ -340,7 +340,6 @@ body {
     }
 
     label {
-
       flex-wrap: nowrap;
 
       p {
@@ -376,6 +375,8 @@ body {
 
         & textarea {
         min-height: 6rem;
+        max-width: 100%;
+        max-height: 10rem;
         align-items: flex-start;
 
         }
@@ -681,6 +682,11 @@ body {
 
   body {
 
+    header {
+      scale: 80%;
+      top: 1rem;
+    }
+
     .container {
       width: 92vw;
       scroll-margin-top: 4rem;
@@ -761,6 +767,10 @@ body {
 @media (max-width: 480px) {
 
   body {
+
+    header {
+      scale: 60%;
+    }
 
     .nav-menu {
       .nav {
