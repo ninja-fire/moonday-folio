@@ -318,9 +318,11 @@ body {
       align-items: center;
       justify-content: center;
       display: flex;
+      gap: 1rem;
 
       .btn-primary-out {
         width: 100%;
+        order: 2;
       }
 
       .btn-primary-in {

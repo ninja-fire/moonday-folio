@@ -72,3 +72,43 @@
         background-position: center;
     }
 }
+
+.btn-secondary {
+    cursor: pointer;
+    display: flex;
+    padding: 1rem 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    border: 2px solid rgba(231, 238, 235, 0.32);
+    background: linear-gradient(97deg, #0F1411 9.09%, #090C0A 92.67%);
+    border-radius: 1000px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: 'Clash Display', sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+
+    letter-spacing: 0.00875rem;
+    transition: all 0.6s;
+
+    &:hover {
+    background: #121714;
+    }
+
+    &:active {
+        background: #141414;
+        background-image: url("../assets/image/bg.png");
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-family: 'Clash Display', sans-serif;
+        -webkit-text-fill-color: transparent;
+        background-repeat: repeat; 
+        background-position: center;
+    }
+}
