@@ -300,6 +300,17 @@ body {
 
   #wishlist {
 
+    #email-error {
+      display: none;
+      color: #FF8A7A;
+      font-family: Clash Display Variable;
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      -webkit-text-fill-color: #FF8A7A;
+    }
+
     .sticky-header {
       position: sticky;
       top: 0;
@@ -322,7 +333,6 @@ body {
 
       .btn-primary-out {
         width: 100%;
-        order: 2;
       }
 
       .btn-primary-in {
@@ -489,7 +499,7 @@ body {
   }
 
   .hidden {
-    display: none;
+    display: none !important;
   }
 
   .flex-1 {
@@ -498,6 +508,10 @@ body {
 
   .padding-80 {
     padding: 5rem 0;
+  }
+
+  .padding-32 {
+    padding: 0 2rem;
   }
 
   .margin-1 {
@@ -511,6 +525,10 @@ body {
 
   .center {
     text-align: center;
+  }
+
+  .start {
+    text-align: start;
   }
 
   .gap-1 {
@@ -562,7 +580,7 @@ body {
     gap: .5rem;
   }
 
-  .width-s {
+  .width-50 {
     max-width: 50rem;
   }
 
