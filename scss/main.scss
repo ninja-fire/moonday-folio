@@ -229,7 +229,7 @@ body {
       align-items: center;
       padding: 1.5rem 0;
       gap: 2rem;
-      border-radius: 2rem;
+      border-radius: 1.5rem;
       overflow: hidden;
       position: relative;
       cursor: pointer;
@@ -300,6 +300,17 @@ body {
 
   #wishlist {
 
+    #email-error {
+      display: none;
+      color: #FF8A7A;
+      font-family: Clash Display Variable;
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      -webkit-text-fill-color: #FF8A7A;
+    }
+
     .sticky-header {
       position: sticky;
       top: 0;
@@ -318,6 +329,7 @@ body {
       align-items: center;
       justify-content: center;
       display: flex;
+      gap: 1rem;
 
       .btn-primary-out {
         width: 100%;
@@ -335,14 +347,51 @@ body {
       height: 64vh;
       flex-wrap: nowrap;
       overflow: scroll;
+      justify-content: space-between;
+
     }
 
     label {
-
       flex-wrap: nowrap;
 
       p {
         text-align: start;
+      }
+
+      &#email-label {
+        font-family: "Clash Display", sans-serif;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: #A8ADAA;
+      }
+
+      &#name-label {
+        font-family: "Clash Display", sans-serif;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: #A8ADAA;
+      }
+
+      &#text-label {
+        font-family: "Clash Display", sans-serif;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: #A8ADAA;
+        width: 100%;
+
+        & textarea {
+        min-height: 6rem;
+        max-width: 100%;
+        max-height: 10rem;
+        align-items: flex-start;
+
+        }
       }
 
       &:hover {
@@ -367,7 +416,12 @@ body {
 
   #team {
 
-    flex-wrap: nowrap;
+    div {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
 
     span {
       background-image: url("../assets/image/bg.png");
@@ -383,8 +437,7 @@ body {
     }
 
     img {
-      width: 24rem;
-      height: 24rem;
+      width: 100%;
     }
   }
 
@@ -446,7 +499,7 @@ body {
   }
 
   .hidden {
-    display: none;
+    display: none !important;
   }
 
   .flex-1 {
@@ -455,6 +508,10 @@ body {
 
   .padding-80 {
     padding: 5rem 0;
+  }
+
+  .padding-32 {
+    padding: 0 2rem;
   }
 
   .margin-1 {
@@ -470,6 +527,10 @@ body {
     text-align: center;
   }
 
+  .start {
+    text-align: start;
+  }
+
   .gap-1 {
     display: flex;
     flex-direction: column;
@@ -480,7 +541,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 4rem;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
   }
 
   .gap-2-row {
@@ -519,7 +580,7 @@ body {
     gap: .5rem;
   }
 
-  .width-s {
+  .width-50 {
     max-width: 50rem;
   }
 
@@ -604,10 +665,6 @@ body {
       scroll-margin-top: 4rem;
     }
 
-    #team {
-      flex-wrap: nowrap;
-    }
-
     #studio {
 
       padding-bottom: 8rem;
@@ -645,6 +702,11 @@ body {
 
   body {
 
+    header {
+      scale: 80%;
+      top: 1rem;
+    }
+
     .container {
       width: 92vw;
       scroll-margin-top: 4rem;
@@ -676,7 +738,16 @@ body {
     }
 
     #team {
+
+      div {
       flex-wrap: wrap;
+      flex: auto;
+      }
+      
+      .img-container {
+        width: 20rem;
+        height: 18rem;
+      }
     }
 
     #wishlist {
@@ -716,6 +787,10 @@ body {
 @media (max-width: 480px) {
 
   body {
+
+    header {
+      scale: 60%;
+    }
 
     .nav-menu {
       .nav {
