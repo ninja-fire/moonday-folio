@@ -112,3 +112,14 @@
         background-position: center;
     }
 }
+
+@media (max-width: 480px) {
+
+    .btn-primary-in {
+        padding: 1rem 1rem;
+    }
+
+    .btn-secondary {
+        padding: 1rem 2rem;
+    }
+  }

@@ -31,7 +31,7 @@ function showContactDetailsForm() {
     btnSecondary.classList.toggle('hidden');
 
     // Update the button text and event handler
-    validateButton.textContent = 'Send Us A Request';
+    validateButton.textContent = 'Send A Request';
     validateButton.type = 'submit';
 
     validateButton.removeEventListener('click', showContactDetailsForm);
