@@ -5,6 +5,7 @@
   "description": "moonday studio portfolio",
   "scripts": {
     "dev": "parcel index.html",
+    "dev:netlify": "netlify dev",
     "build": "parcel build index.html"
   },
   "repository": {
@@ -19,10 +20,13 @@
   "homepage": "https://github.com/ninja-fire/moonday-folio",
   "dependencies": {
     "animate.css": "^4.1.1",
-    "parcel": "^2.0.0"
+    "node-telegram-bot-api": "^0.63.0",
+    "parcel": "^2.10.0"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.1",
-    "sass": "^1.43.4"
+    "@parcel/transformer-sass": "^2.10.0",
+    "netlify-cli": "^16.9.1",
+    "sass": "^1.69.4",
+    "yup": "^1.3.2"
   }
 }
