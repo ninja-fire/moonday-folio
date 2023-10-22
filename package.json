@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "parcel index.html",
     "dev:netlify": "netlify dev",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html && npm run copy:static",
+    "copy:static": "cp robot.txt ./dist/robot.txt"
   },
   "repository": {
     "type": "git",
