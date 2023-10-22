@@ -66,11 +66,11 @@ function handleContactDetailsSubmit() {
 
     contactData.email = emailDetails.value;
     if (nameDetails.value) {
-        contactData.name = nameDetails.value;
+        contactData.name = nameDetails.value.trim();
     }
 
     if (textDetails.value) {
-        contactData.text = textDetails.value;
+        contactData.text = textDetails.value.trim();
     }
 
     btnBack.disabled = true;
