@@ -18,14 +18,16 @@
     &:hover {
         background-size: auto;
         background-position: left;
-        
     }
 
     &:active {
         background-size: auto;
         background-position: inherit;
     box-shadow: none;
+    }
 
+    &:disabled {
+    cursor: not-allowed;
     }
 }
 
@@ -112,6 +114,11 @@
         background-position: center;
     }
 }
+
+button:disabled {
+        cursor: not-allowed;
+        opacity: 50%;
+        }
 
 @media (max-width: 480px) {
 

@@ -22,7 +22,7 @@ const contactSchema = object({
     email: string().email().required().min(3).max(256),
     needs: array().of(string().oneOf(Object.keys(needs))).required()
 });
-
+    
 
 
 function capitalizeFLetter(text) {

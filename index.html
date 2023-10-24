@@ -415,24 +415,29 @@
                 <div class="gap-2 flex-start hidden" id="form-content-contact">
                     <p class="caption start">Please provide your name and email so we can reach out to you. It is the
                         first step to bringing your design project to life.</p>
-                    <label class="gap-1-2" id="email-label" for="email-details">
-                        Your email address *
-                        <input type="text" name="email-details" placeholder="Enter your email"
-                            id="email-details" />
-                        <span id="email-error" class="error-message">Please enter a valid email address.</span>
-                    </label>
 
-                    <label class="gap-1-2" id="name-label" for="name-details">
-                        Your name
-                        <input type="text" name="name-details" placeholder="Name and Surname" id="name-details" />
-                    </label>
+                    <div class="gap-1 width-full">
+                        <label class="gap-1-2" id="email-label" for="email-details">
+                            Your email address *
+                            <input type="text" name="email-details" placeholder="Enter your email" id="email-details" />
+                            <span id="email-error" class="error-message">Please enter a valid email address.</span>
+                        </label>
 
-                    <label class="gap-1-2" id="text-label" for="text-details">
-                        Describe your needs
-                        <textarea type="text" name="text-details"
-                            placeholder="Tell us more about your project and your needs..." id="text-details"
-                            spellcheck="true"></textarea>
-                    </label>
+                        <label class="gap-1-2" id="name-label" for="name-details">
+                            Your name
+                            <input type="text" name="name-details" placeholder="Name and Surname" id="name-details" />
+                            <span id="name-error" class="error-message">Please enter a valid email address.</span>
+                        </label>
+
+                        <label class="gap-1-2" id="text-label" for="text-details">
+                            Describe your needs
+                            <textarea type="text" name="text-details"
+                                placeholder="Tell us more about your project and your needs..." id="text-details"
+                                spellcheck="true">
+                            </textarea>
+                            <span id="text-error" class="error-message">Please enter a valid email address.</span>
+                        </label>
+                    </div>
                 </div>
 
                 <div class="sticky-btn" id="btn-container">

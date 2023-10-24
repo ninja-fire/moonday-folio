@@ -56,12 +56,12 @@ function handleContactDetailsSubmit() {
     // Check if the email is in a valid format
     if (!emailPattern.test(emailDetails.value)) {
         // Display the error message below the email input
-        emailError.style.display = 'flex';
+        emailError.style.visibility = 'visible';
         emailDetails.style.borderColor = '#FF8A7A';
         return;
     } else {
         // Clear the error message when the input is valid
-        emailError.style.display = 'none';
+        emailError.style.visibility = 'hidden';
     }
 
     contactData.email = emailDetails.value;
