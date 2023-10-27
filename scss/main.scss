@@ -202,9 +202,6 @@ body {
 
   #work {
 
-    // width: 100%;
-    // align-items: flex-start;
-
     div {
       width: 100%;
       flex-wrap: nowrap;
@@ -300,8 +297,7 @@ body {
 
   #wishlist {
 
-    #email-error {
-      display: none;
+    .error-message {
       color: #FF8A7A;
       font-family: Clash Display Variable;
       font-size: 0.75rem;
@@ -309,6 +305,19 @@ body {
       font-weight: 500;
       line-height: normal;
       -webkit-text-fill-color: #FF8A7A;
+      transition: all 0.2s;
+    }
+
+    #email-error {
+      visibility: hidden;
+    }
+
+    #name-error {
+      visibility: hidden;
+    }
+
+    #text-error {
+      visibility: hidden;
     }
 
     .sticky-header {
@@ -365,6 +374,7 @@ body {
         font-weight: 600;
         line-height: normal;
         color: #A8ADAA;
+        width: fit-content;
       }
 
       &#name-label {
@@ -374,6 +384,7 @@ body {
         font-weight: 600;
         line-height: normal;
         color: #A8ADAA;
+        width: fit-content;
       }
 
       &#text-label {
@@ -582,6 +593,10 @@ body {
 
   .width-50 {
     max-width: 50rem;
+  }
+
+  .width-full {
+    width: 100%;
   }
 
   .align-center {
