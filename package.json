@@ -2,7 +2,7 @@
   "name": "moonday-folio",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "version": "1.0.0",
-  "description": "moonday studio portfolio",
+  "description": "Moonday Studio - Crafting Unique Design Experiences: Amplify your brand's identity with our cutting-edge branding, web3 design, and blockchain solutions. Your vision, our expertise.",
   "scripts": {
     "dev": "parcel index.html",
     "dev:netlify": "netlify dev",
@@ -13,6 +13,7 @@
     "type": "git",
     "url": "git@github.com:ninja-fire/moonday-folio.git"
   },
+  "keywords": ["creative design", "branding", "web3 design", "blockchain solutions", "brand identity", "studio services"],
   "author": "Ninja fire",
   "license": "MIT",
   "bugs": {
