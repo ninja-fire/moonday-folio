@@ -784,6 +784,10 @@ body {
 
       .nav-slogan {
         display: none;
+
+        &.middle {
+          display: flex;
+        }
       }
     }
 
