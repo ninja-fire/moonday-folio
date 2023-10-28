@@ -2,6 +2,7 @@
 @import "typo";
 @import "button";
 @import "form";
+@import "project";
 
 
 
@@ -521,6 +522,10 @@ body {
     padding: 5rem 0;
   }
 
+  .padding-side-80 {
+    padding: 0 5rem;
+  }
+
   .padding-32 {
     padding: 0 2rem;
   }
@@ -605,6 +610,10 @@ body {
 
   .flex-start {
     align-items: flex-start;
+  }
+
+  .justify-start {
+    justify-content: flex-start;
   }
 
   footer {
