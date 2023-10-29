@@ -54,7 +54,7 @@ body {
     position: fixed;
     bottom: 4rem;
     z-index: 100;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(37, 38, 37, 0.64);
     border: .05rem solid rgba(255, 255, 255, 0.16);
     backdrop-filter: blur(32px);
     border-radius: 1000px;
@@ -320,7 +320,6 @@ body {
     #thank-you-container {
       img {
         width: 64%;
-        // height: 224px;
       }
     }
 

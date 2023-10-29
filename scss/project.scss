@@ -71,7 +71,13 @@ main {
                 padding-bottom: 3rem;
                 .cover {
                     img {
-                        scale: 32%
+                        scale: 32%;
+                    }
+                }
+
+                .cover-full {
+                    img {
+                        scale: 120%;
                     }
                 }
             }
