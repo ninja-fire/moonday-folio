@@ -317,6 +317,13 @@ body {
       visibility: hidden;
     }
 
+    #thank-you-container {
+      img {
+        width: 64%;
+        // height: 224px;
+      }
+    }
+
     #text-error {
       visibility: hidden;
     }
