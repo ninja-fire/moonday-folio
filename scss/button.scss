@@ -8,7 +8,7 @@
     z-index: 3;
 
     border-radius: 1000px;
-    background-image: url("../assets/image/bg.png");
+    background-image: url("../assets/image/bg.webp");
     background-repeat: repeat; 
     background-position: center;
     background-size: cover;
@@ -65,7 +65,7 @@
         font-size: 1rem;
         line-height: 21px;
         background: #141414;
-        background-image: url("../assets/image/bg.png");
+        background-image: url("../assets/image/bg.webp");
         background-clip: text;
         -webkit-background-clip: text;
         font-family: 'Clash Display', sans-serif;
@@ -105,7 +105,7 @@
 
     &:active {
         background: #141414;
-        background-image: url("../assets/image/bg.png");
+        background-image: url("../assets/image/bg.webp");
         background-clip: text;
         -webkit-background-clip: text;
         font-family: 'Clash Display', sans-serif;

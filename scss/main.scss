@@ -2,6 +2,7 @@
 @import "typo";
 @import "button";
 @import "form";
+@import "project";
 
 
 
@@ -53,7 +54,7 @@ body {
     position: fixed;
     bottom: 4rem;
     z-index: 100;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(37, 38, 37, 0.64);
     border: .05rem solid rgba(255, 255, 255, 0.16);
     backdrop-filter: blur(32px);
     border-radius: 1000px;
@@ -138,7 +139,7 @@ body {
     }
 
     span {
-      background-image: url("../assets/image/bg.png");
+      background-image: url("../assets/image/bg.webp");
       background-clip: text;
       -webkit-background-clip: text;
       font-family: 'Clash Display', sans-serif;
@@ -181,7 +182,7 @@ body {
     }
 
     span {
-      background-image: url("../assets/image/bg.png");
+      background-image: url("../assets/image/bg.webp");
       background-clip: text;
       -webkit-background-clip: text;
       font-family: 'Clash Display', sans-serif;
@@ -208,7 +209,7 @@ body {
     }
 
     span {
-      background-image: url("../assets/image/bg.png");
+      background-image: url("../assets/image/bg.webp");
       background-clip: text;
       -webkit-background-clip: text;
       font-family: 'Clash Display', sans-serif;
@@ -284,7 +285,7 @@ body {
       &:active {
         .overlay {
           opacity: 1;
-          background-image: url(../assets/image/bgblured.png);
+          background-image: url(../assets/image/bgblured.webp);
           background-position: left;
         }
 
@@ -314,6 +315,12 @@ body {
 
     #name-error {
       visibility: hidden;
+    }
+
+    #thank-you-container {
+      img {
+        width: 64%;
+      }
     }
 
     #text-error {
@@ -412,7 +419,7 @@ body {
     }
 
     span {
-      background-image: url("../assets/image/bg.png");
+      background-image: url("../assets/image/bg.webp");
       background-clip: text;
       -webkit-background-clip: text;
       font-family: 'Clash Display', sans-serif;
@@ -435,7 +442,7 @@ body {
 
 
     span {
-      background-image: url("../assets/image/bg.png");
+      background-image: url("../assets/image/bg.webp");
       background-clip: text;
       -webkit-background-clip: text;
       font-family: 'Clash Display', sans-serif;
@@ -457,7 +464,7 @@ body {
     padding-bottom: 0;
 
     span {
-      background-image: url("../assets/image/bg.png");
+      background-image: url("../assets/image/bg.webp");
       background-clip: text;
       -webkit-background-clip: text;
       font-family: 'Clash Display', sans-serif;
@@ -519,6 +526,10 @@ body {
 
   .padding-80 {
     padding: 5rem 0;
+  }
+
+  .padding-side-80 {
+    padding: 0 5rem;
   }
 
   .padding-32 {
@@ -605,6 +616,10 @@ body {
 
   .flex-start {
     align-items: flex-start;
+  }
+
+  .justify-start {
+    justify-content: flex-start;
   }
 
   footer {
@@ -784,6 +799,10 @@ body {
 
       .nav-slogan {
         display: none;
+
+        &.middle {
+          display: flex;
+        }
       }
     }
 
