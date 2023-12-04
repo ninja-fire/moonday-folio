@@ -4,8 +4,6 @@
 @import "form";
 @import "project";
 
-
-
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,6 +26,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow-x: hidden;
 
   header {
     display: flex;
@@ -121,11 +120,26 @@ body {
 
   #bg {
     filter: blur(60px);
-    top: 1rem;
-    z-index: 0;
-    position: absolute;
-    top: -80rem;
+    z-index: 1;
     rotate: 180deg;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      position: absolute;
+      scale: 80%;
+      margin-top: 56rem;
+    }
+  }
+
+  #herobg {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -64rem;
+    z-index: 0;
     width: 100%;
   }
 
@@ -153,7 +167,6 @@ body {
   }
 
   #studio {
-    // padding-top: 5rem;
     justify-content: center;
     flex-direction: row;
     overflow-x: clip;
@@ -405,10 +418,10 @@ body {
         width: 100%;
 
         & textarea {
-        min-height: 6rem;
-        max-width: 100%;
-        max-height: 10rem;
-        align-items: flex-start;
+          min-height: 6rem;
+          max-width: 100%;
+          max-height: 10rem;
+          align-items: flex-start;
 
         }
       }
@@ -436,6 +449,7 @@ body {
   #team {
 
     div {
+      display: flex;
       width: 100%;
       align-items: center;
       justify-content: center;
@@ -458,6 +472,23 @@ body {
     img {
       width: 100%;
       height: 100%;
+    }
+
+    .teambg {
+      z-index: -1;
+      display: flex;
+      position: absolute;
+      width: auto;
+
+      &.member-img {
+      scale: 8%;
+      display: none;
+      }
+
+      &#cover-img {
+      scale: 12%;
+      margin-bottom: 16rem;
+      }
     }
   }
 
@@ -491,6 +522,7 @@ body {
     width: fit-content;
     cursor: pointer;
     transition: all 0.6s;
+    backdrop-filter: blur(8px);
 
     h5 {
       transition: all 0.6s;
@@ -769,16 +801,32 @@ body {
       }
     }
 
+    #work {
+      div {
+      flex-wrap: wrap;
+      }
+    }
+
     #team {
 
       div {
-      flex-wrap: wrap;
-      flex: auto;
+        flex-wrap: wrap;
+        flex: auto;
       }
-      
-      .img-container {
-        width: 20rem;
-        height: 18rem;
+
+      .team-member {
+        width: 88%;
+      }
+
+      .teambg {  
+        &.member-img {
+        scale: 12%;
+        display: flex;
+        }
+  
+        &#cover-img {
+        display: none;
+        }
       }
     }
 
@@ -825,7 +873,7 @@ body {
   body {
 
     header {
-      scale: 60%;
+      scale: 80%;
     }
 
     .nav-menu {
@@ -835,6 +883,13 @@ body {
 
       .nav-slogan {
         display: none;
+      }
+    }
+
+    #bg {
+      img {
+      scale: 16%;
+      margin-top: 0;
       }
     }
 
@@ -876,6 +931,12 @@ body {
 
     #team {
       flex-wrap: wrap;
+
+      .teambg {  
+        &.member-img {
+        scale: 8%;
+        }
+      }
     }
 
     footer {
