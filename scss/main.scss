@@ -455,6 +455,9 @@ body {
       justify-content: center;
     }
 
+    .team-member {
+      width: 88%;
+    }
 
     span {
       background-image: url("../assets/image/bg.webp");
@@ -481,13 +484,29 @@ body {
       width: auto;
 
       &.member-img {
-      scale: 8%;
-      display: none;
+        scale: 8%;
+        display: none;
+      }
+
+      &.moon-member-1 {
+        filter: blur(32rem);
+        scale: 6%;
+        margin-right: 12rem;
+        z-index: -2;
+        opacity: 64%;
+      }
+
+      &.moon-member-2 {
+        filter: blur(32rem);
+        transform: scale(-6%, 6%);
+        margin-left: 12rem;
+        z-index: -2;
+        opacity: 64%;
       }
 
       &#cover-img {
-      scale: 12%;
-      margin-bottom: 16rem;
+        scale: 12%;
+        margin-bottom: 16rem;
       }
     }
   }
@@ -803,7 +822,7 @@ body {
 
     #work {
       div {
-      flex-wrap: wrap;
+        flex-wrap: wrap;
       }
     }
 
@@ -818,14 +837,26 @@ body {
         width: 88%;
       }
 
-      .teambg {  
+      .teambg {
         &.member-img {
-        scale: 12%;
-        display: flex;
+          scale: 12%;
+          display: flex;
+        }
+
+        &.moon-member-1 {
+          filter: blur(32rem);
+          scale: 4%;
+          margin-right: 12rem;
         }
   
+        &.moon-member-2 {
+          filter: blur(32rem);
+          transform: scale(-4%, 4%);
+          margin-left: 12rem;
+        }
+
         &#cover-img {
-        display: none;
+          display: none;
         }
       }
     }
@@ -888,8 +919,8 @@ body {
 
     #bg {
       img {
-      scale: 16%;
-      margin-top: 0;
+        scale: 16%;
+        margin-top: 0;
       }
     }
 
@@ -932,9 +963,9 @@ body {
     #team {
       flex-wrap: wrap;
 
-      .teambg {  
+      .teambg {
         &.member-img {
-        scale: 8%;
+          scale: 8%;
         }
       }
     }
