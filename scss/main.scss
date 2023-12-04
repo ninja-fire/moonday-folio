@@ -4,8 +4,6 @@
 @import "form";
 @import "project";
 
-
-
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,6 +26,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow-x: hidden;
 
   header {
     display: flex;
@@ -122,10 +121,19 @@ body {
   #bg {
     filter: blur(60px);
     top: 1rem;
-    z-index: 0;
+    z-index: 1;
     position: absolute;
     top: -80rem;
     rotate: 180deg;
+    width: 100%;
+  }
+
+  #herobg {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -64rem;
+    z-index: 0;
     width: 100%;
   }
 
@@ -405,10 +413,10 @@ body {
         width: 100%;
 
         & textarea {
-        min-height: 6rem;
-        max-width: 100%;
-        max-height: 10rem;
-        align-items: flex-start;
+          min-height: 6rem;
+          max-width: 100%;
+          max-height: 10rem;
+          align-items: flex-start;
 
         }
       }
@@ -491,6 +499,7 @@ body {
     width: fit-content;
     cursor: pointer;
     transition: all 0.6s;
+    backdrop-filter: blur(8px);
 
     h5 {
       transition: all 0.6s;
@@ -772,14 +781,10 @@ body {
     #team {
 
       div {
-      flex-wrap: wrap;
-      flex: auto;
+        flex-wrap: wrap;
+        flex: auto;
       }
-      
-      .img-container {
-        width: 20rem;
-        height: 18rem;
-      }
+
     }
 
     #wishlist {
