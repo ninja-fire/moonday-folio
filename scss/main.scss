@@ -120,12 +120,18 @@ body {
 
   #bg {
     filter: blur(60px);
-    top: 1rem;
     z-index: 1;
-    position: absolute;
-    top: -80rem;
     rotate: 180deg;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      position: absolute;
+      scale: 80%;
+      margin-top: 56rem;
+    }
   }
 
   #herobg {
@@ -161,7 +167,6 @@ body {
   }
 
   #studio {
-    // padding-top: 5rem;
     justify-content: center;
     flex-direction: row;
     overflow-x: clip;
@@ -474,7 +479,16 @@ body {
       display: flex;
       position: absolute;
       width: auto;
+
+      &.member-img {
       scale: 8%;
+      display: none;
+      }
+
+      &#cover-img {
+      scale: 12%;
+      margin-bottom: 16rem;
+      }
     }
   }
 
@@ -787,11 +801,32 @@ body {
       }
     }
 
+    #work {
+      div {
+      flex-wrap: wrap;
+      }
+    }
+
     #team {
 
       div {
         flex-wrap: wrap;
         flex: auto;
+      }
+
+      .team-member {
+        width: 88%;
+      }
+
+      .teambg {  
+        &.member-img {
+        scale: 12%;
+        display: flex;
+        }
+  
+        &#cover-img {
+        display: none;
+        }
       }
     }
 
@@ -838,7 +873,7 @@ body {
   body {
 
     header {
-      scale: 60%;
+      scale: 80%;
     }
 
     .nav-menu {
@@ -848,6 +883,13 @@ body {
 
       .nav-slogan {
         display: none;
+      }
+    }
+
+    #bg {
+      img {
+      scale: 16%;
+      margin-top: 0;
       }
     }
 
@@ -889,6 +931,12 @@ body {
 
     #team {
       flex-wrap: wrap;
+
+      .teambg {  
+        &.member-img {
+        scale: 8%;
+        }
+      }
     }
 
     footer {
