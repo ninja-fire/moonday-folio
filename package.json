@@ -7,7 +7,7 @@
     "dev": "parcel index.html",
     "dev:netlify": "netlify dev",
     "build": "parcel build index.html && npm run copy:static",
-    "copy:static": "cp robots.txt ./dist/robots.txt"
+    "copy:static": "cp robots.txt ./dist/robots.txt && cp sitemap.xml ./dist/sitemap.xml"
   },
   "repository": {
     "type": "git",
