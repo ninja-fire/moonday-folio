@@ -120,12 +120,14 @@ body {
 
   #bg {
     filter: blur(60px);
-    z-index: 1;
+    z-index: 10;
     rotate: 180deg;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
 
     img {
       position: absolute;
@@ -141,6 +143,16 @@ body {
     top: -64rem;
     z-index: 0;
     width: 100%;
+
+    animation: rotate 1s linear 1;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+  }
+
+  @keyframes rotate {
+    to {
+      transform: rotate(24deg);
+    }
   }
 
   #hero {
@@ -178,6 +190,9 @@ body {
       left: -6rem;
       filter: blur(2rem);
 
+      animation: scale 1s linear 1;
+      animation-play-state: paused;
+      animation-delay: calc(var(--scroll) * -1s);
     }
 
     .right {
@@ -185,6 +200,9 @@ body {
       right: -6rem;
       filter: blur(2rem);
 
+      animation: scale 1s linear 1;
+      animation-play-state: paused;
+      animation-delay: calc(var(--scroll) * -1s);
     }
 
     img {
@@ -486,6 +504,10 @@ body {
       &.member-img {
         scale: 8%;
         display: none;
+
+        animation: scale 1s linear 1;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scroll) * -1s);
       }
 
       &.moon-member-1 {
@@ -505,9 +527,20 @@ body {
       }
 
       &#cover-img {
-        scale: 12%;
+        scale: 8%;
         margin-bottom: 16rem;
+
+        animation: scale 1s linear 1;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scroll) * -1s);
       }
+    }
+  }
+
+  @keyframes scale {
+    to {
+      scale:12%;
+      opacity: 100%;
     }
   }
 
