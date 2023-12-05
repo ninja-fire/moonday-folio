@@ -120,12 +120,14 @@ body {
 
   #bg {
     filter: blur(60px);
-    z-index: 1;
+    z-index: 10;
     rotate: 180deg;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
 
     img {
       position: absolute;
@@ -141,6 +143,16 @@ body {
     top: -64rem;
     z-index: 0;
     width: 100%;
+
+    animation: rotate 1s linear 1;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+  }
+
+  @keyframes rotate {
+    to {
+      transform: rotate(24deg);
+    }
   }
 
   #hero {
@@ -178,6 +190,9 @@ body {
       left: -6rem;
       filter: blur(2rem);
 
+      animation: scale 1s linear 1;
+      animation-play-state: paused;
+      animation-delay: calc(var(--scroll) * -1s);
     }
 
     .right {
@@ -185,6 +200,9 @@ body {
       right: -6rem;
       filter: blur(2rem);
 
+      animation: scale 1s linear 1;
+      animation-play-state: paused;
+      animation-delay: calc(var(--scroll) * -1s);
     }
 
     img {
@@ -455,6 +473,9 @@ body {
       justify-content: center;
     }
 
+    .team-member {
+      width: 88%;
+    }
 
     span {
       background-image: url("../assets/image/bg.webp");
@@ -481,14 +502,45 @@ body {
       width: auto;
 
       &.member-img {
-      scale: 8%;
-      display: none;
+        scale: 8%;
+        display: none;
+
+        animation: scale 1s linear 1;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scroll) * -1s);
+      }
+
+      &.moon-member-1 {
+        filter: blur(32rem);
+        scale: 6%;
+        margin-right: 12rem;
+        z-index: -2;
+        opacity: 64%;
+      }
+
+      &.moon-member-2 {
+        filter: blur(32rem);
+        transform: scale(-6%, 6%);
+        margin-left: 12rem;
+        z-index: -2;
+        opacity: 64%;
       }
 
       &#cover-img {
-      scale: 12%;
-      margin-bottom: 16rem;
+        scale: 8%;
+        margin-bottom: 16rem;
+
+        animation: scale 1s linear 1;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scroll) * -1s);
       }
+    }
+  }
+
+  @keyframes scale {
+    to {
+      scale:12%;
+      opacity: 100%;
     }
   }
 
@@ -803,7 +855,7 @@ body {
 
     #work {
       div {
-      flex-wrap: wrap;
+        flex-wrap: wrap;
       }
     }
 
@@ -818,14 +870,26 @@ body {
         width: 88%;
       }
 
-      .teambg {  
+      .teambg {
         &.member-img {
-        scale: 12%;
-        display: flex;
+          scale: 12%;
+          display: flex;
+        }
+
+        &.moon-member-1 {
+          filter: blur(32rem);
+          scale: 4%;
+          margin-right: 12rem;
         }
   
+        &.moon-member-2 {
+          filter: blur(32rem);
+          transform: scale(-4%, 4%);
+          margin-left: 12rem;
+        }
+
         &#cover-img {
-        display: none;
+          display: none;
         }
       }
     }
@@ -888,8 +952,8 @@ body {
 
     #bg {
       img {
-      scale: 16%;
-      margin-top: 0;
+        scale: 16%;
+        margin-top: 0;
       }
     }
 
@@ -932,9 +996,9 @@ body {
     #team {
       flex-wrap: wrap;
 
-      .teambg {  
+      .teambg {
         &.member-img {
-        scale: 8%;
+          scale: 8%;
         }
       }
     }

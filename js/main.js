@@ -119,3 +119,7 @@ function recreateDesignNeedsForm() {
 // Attach a click event listener to the "Validate My Wishlist" button
 validateButton.addEventListener('click', submitButtonListener);
 btnBack.addEventListener('click', recreateDesignNeedsForm);
+
+window.addEventListener('scroll', () => {
+    document.body.style.setProperty('--scroll', window.scrollY / (document.body.offsetHeight - window.innerHeight));
+  }, false);
