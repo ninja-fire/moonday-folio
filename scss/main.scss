@@ -355,6 +355,12 @@ body {
       }
     }
 
+    #loader-container {
+      img {
+        scale: 16%;
+      }
+    }
+
     #text-error {
       visibility: hidden;
     }
