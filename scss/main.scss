@@ -119,8 +119,8 @@ body {
   }
 
   #bg {
-    filter: blur(60px);
-    z-index: 10;
+    filter: blur(4rem);
+    z-index: 99;
     rotate: 180deg;
     width: 100%;
     display: flex;
@@ -355,6 +355,12 @@ body {
       }
     }
 
+    #loader-container {
+      img {
+        scale: 16%;
+      }
+    }
+
     #text-error {
       visibility: hidden;
     }
@@ -504,10 +510,6 @@ body {
       &.member-img {
         scale: 8%;
         display: none;
-
-        animation: scale 1s linear 1;
-        animation-play-state: paused;
-        animation-delay: calc(var(--scroll) * -1s);
       }
 
       &.moon-member-1 {
@@ -872,8 +874,12 @@ body {
 
       .teambg {
         &.member-img {
-          scale: 12%;
+          scale: 8%;
           display: flex;
+
+          animation: scale 1s linear 1;
+          animation-play-state: paused;
+          animation-delay: calc(var(--scroll) * -1s);
         }
 
         &.moon-member-1 {
